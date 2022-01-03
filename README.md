@@ -1,3 +1,4 @@
+[Market-1501_format.txt](https://github.com/Chatchanan-V/PRiDAN/files/7803652/Market-1501_format.txt)
 # PRiDAN : Person Re-identification from Drones with Adaptive Weights and Expanded Neighbourhood"
 This repository contains the code for the paper "PRiDAN : Person Re-identification from Drones with Adaptive Weights and Expanded Neighbourhood"
 
