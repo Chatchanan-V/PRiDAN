@@ -35,3 +35,5 @@ I have converted the dataset into Market-1501 format, which contains the followi
 ### Re-ranking
 
 ### Visualization
+
+## Reference
