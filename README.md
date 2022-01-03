@@ -17,18 +17,11 @@ You can download the DukeMTMC-reID dataset from [Google Drive](https://drive.goo
 # PRAI-1581
 You can download the PRAI-1581 dataset from [Google Drive](https://drive.google.com/file/d/168UcmbW1twnq7F8BB_FtvPzCKiCLAMIp/view?usp=sharing)
 I have converted the dataset into Market-1501 format, which contains the following directories
-'''cmd
-├───.android
-├───.cache
-│   └───tooling
-│       └───gradle
-├───.conda
-├───.designer
-│   ├───backup
-│   │   └───tmp
-│   └───templates
-├───.dnx
-│   └───packages
-├───.eclipse
-'''
+├── Market/
+│   ├── bounding_box_test/          /* Files for testing (candidate images pool)
+│   ├── bounding_box_train/         /* Files for training 
+│   ├── gt_bbox/                    /* Files for multiple query testing 
+│   ├── gt_query/                   /* We do not use it 
+│   ├── query/                      /* Files for testing (query images)
+│   ├── readme.txt
 
