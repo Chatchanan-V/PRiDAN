@@ -1,7 +1,7 @@
 # PRiDAN : Person Re-identification from Drones with Adaptive Weights and Expanded Neighbourhood"
 This repository contains the code for the paper "PRiDAN : Person Re-identification from Drones with Adaptive Weights and Expanded Neighbourhood"
 
-The majority of the code is based on [Person_reID_baseline_pytorch](https://github.com/layumi/Person_reID_baseline_pytorch)
+The majority of the code is based on [Person_reID_baseline_pytorch](https://github.com/layumi/Person_reID_baseline_pytorch), [Person-reID-triplet-loss](https://github.com/layumi/Person-reID-triplet-loss)
 
 # Overview
 This repository contains following resources
