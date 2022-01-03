@@ -10,8 +10,8 @@ This repository contains following resources
 - PRiDAN implementation
 
 # Market-1501
-You can download the Market1501 dataset from [Google Drive](https://drive.google.com/file/d/1_KwUvfhI-6iqNj2ZUBDJYBEcWYK7gv0L/view?usp=sharing)
+You can download the Market-1501 dataset from [Google Drive](https://drive.google.com/file/d/1_KwUvfhI-6iqNj2ZUBDJYBEcWYK7gv0L/view?usp=sharing)
 
 # DukeMTMC-reID
-
+You can download the DukeMTMC-reID dataset from [Google Drive](https://drive.google.com/file/d/1_iqu_Q0GtKU7e3r1VjhpcbNfGffADxdU/view?usp=sharing)
 # PRAI-1581
