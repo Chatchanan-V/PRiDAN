@@ -26,5 +26,5 @@ I have converted the dataset into Market-1501 format, which contains the followi
 │   ├── readme.txt
 ```
 ## Implementation
-### Preparing dataset
+## Preparing dataset
 
