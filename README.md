@@ -19,7 +19,7 @@ You can download the PRAI-1581 dataset from [Google Drive](https://drive.google.
 I have converted the dataset into Market-1501 format, which contains the following directories:
 ```bash 
 ├── PRAI-1581/
-│   ├── bounding_box_test/          /* Files for testing (candidate images pool)
+│   ├── bounding_box_test/          /* Files for testing (images pool)
 │   ├── bounding_box_train/         /* Files for training 
 │   ├── query/                      /* Files for testing (query images)
 │   ├── partitions.pkl 
