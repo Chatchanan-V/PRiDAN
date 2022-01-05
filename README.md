@@ -67,7 +67,18 @@ The script creates new folder named pytorch in PRAI-1581 folder:
 ```
 
 ### Training
+Install and import torch_snippets, torch_summary, and other required libraries.
+```bash 
+!pip install -q torch_snippets
+import torch_snippets
+from torch_snippets import *
+import os 
+from shutil import copyfile
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
+!pip install torch_summary
+from torchsummary import summary
+```
 ### Testing
 
 ### Re-ranking
