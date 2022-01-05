@@ -238,7 +238,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
                 # count = 0
 
                 #choose top n hardest negative
-                n = 2
+                n = 3
 
                 for k in range(now_batch_size):
                     top_n_negative = []
