@@ -32,6 +32,10 @@ or simply run the following code to fetch PRAI-1581 dataset and unzip it
 ```
 ## Implementation
 ### Preparing dataset
+run the following to prepare the dataset 
+```bash 
+!python prepare_dataset
+```
 
 ### Training
 
