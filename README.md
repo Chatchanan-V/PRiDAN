@@ -38,7 +38,7 @@ or simply run the following code to fetch PRAI-1581 dataset and unzip it
 !wget -q https://www.dropbox.com/s/hc9tg34vxmb82pz/PRAI-1581_train_test_query-Market-1501_format.zip?dl=0
 !unzip -q PRAI-1581_train_test_query-Market-1501_format.zip?dl=0
 ```
-## Implementation
+# Implementation
 Clone the repository to get started
 ```bash 
 !git clone https://github.com/Chatchanan-V/PRiDAN.git
