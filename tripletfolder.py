@@ -1,3 +1,6 @@
+""" The original creator of the following code is Zhedong Zheng """
+""" https://github.com/layumi/Person_reID_baseline_pytorch """
+
 from torchvision import datasets
 import os
 import numpy as np
