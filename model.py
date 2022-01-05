@@ -1,4 +1,5 @@
-# The original creator of the following code is from https://github.com/layumi/Person_reID_baseline_pytorch
+""" The original creator of the following code is Zhedong Zheng """
+""" https://github.com/layumi/Person_reID_baseline_pytorch """
 
 import torch
 import torch.nn as nn
