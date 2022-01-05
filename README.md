@@ -15,7 +15,7 @@ You can download the Market-1501 dataset from [Google Drive](https://drive.googl
 ## DukeMTMC-reID
 You can download the DukeMTMC-reID dataset from [Google Drive](https://drive.google.com/file/d/1_iqu_Q0GtKU7e3r1VjhpcbNfGffADxdU/view?usp=sharing)
 ## PRAI-1581
-This is the link to the original creator this dataset [link](https://github.com/stormyoung/PRAI-1581)
+This is the link to the original creator of this dataset [link](https://github.com/stormyoung/PRAI-1581)
 
 It contains 39461 images for 1580 IDs which are divided into:
 - Training: 19523 images for 781 IDs 
