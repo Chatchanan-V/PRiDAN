@@ -47,8 +47,7 @@ cd PRiDAN
 ### Preparing dataset
 run the following to prepare the dataset 
 ```bash 
-!python prepare_dataset
-```
+!python prepare_dataset.py```
 
 ### Training
 
