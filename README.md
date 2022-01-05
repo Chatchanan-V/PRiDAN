@@ -25,6 +25,11 @@ I have converted the dataset into Market-1501 format, which contains the followi
 │   ├── partitions.pkl 
 │   ├── readme.txt
 ```
+or simply run the following code to fetch dataset and unzip it
+```bash 
+!wget -q https://www.dropbox.com/s/hc9tg34vxmb82pz/PRAI-1581_train_test_query-Market-1501_format.zip?dl=0
+!unzip -q PRAI-1581_train_test_query-Market-1501_format.zip?dl=0
+```
 ## Implementation
 ### Preparing dataset
 
