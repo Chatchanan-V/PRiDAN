@@ -79,6 +79,11 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 !pip install torch_summary
 from torchsummary import summary
 ```
+
+create new folder named model for storing files related to the training phase
+```bash
+os.mkdir('model')
+```
 ### Testing
 
 ### Re-ranking
