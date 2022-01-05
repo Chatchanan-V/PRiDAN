@@ -1,8 +1,8 @@
-""" The original creator of this code is Zhedong Zheng """
+""" The original creator of the following code is Zhedong Zheng """
+""" https://github.com/layumi/Person_reID_baseline_pytorch """
 
 import os
 from shutil import copyfile
-
 
 
 # You only need to change this line to your dataset download path
