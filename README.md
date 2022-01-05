@@ -49,6 +49,23 @@ run the following to prepare the dataset
 ```bash 
 !python prepare_dataset.py
 ```
+The script creates new folder named pytorch in PRAI-1581 folder:
+```bash 
+├── PRAI-1581/
+│   ├── bounding_box_test/        
+│   ├── bounding_box_train/     
+│   ├── pytorch/  
+│   │   ├── gallery/   
+│   │   ├── multi-query/   
+│   │   ├── query/   
+│   │   ├── train/   
+│   │   ├── train_all/   
+│   │   ├── val/   
+│   ├── query/                     
+│   ├── partitions.pkl 
+│   ├── readme.txt
+```
+
 ### Training
 
 ### Testing
