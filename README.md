@@ -42,6 +42,7 @@ or simply run the following code to fetch PRAI-1581 dataset and unzip it
 Clone the repository to get started
 ```bash 
 !git clone https://github.com/Chatchanan-V/PRiDAN.git
+cd PRiDAN
 ```
 ### Preparing dataset
 run the following to prepare the dataset 
