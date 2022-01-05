@@ -1,8 +1,8 @@
+""" The original creator of this code is Zhedong Zheng """
+
 import os
 from shutil import copyfile
 
-
-""" The original creator of this code is Zhedong Zheng"""
 
 
 # You only need to change this line to your dataset download path
