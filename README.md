@@ -84,6 +84,11 @@ create new folder named model for storing files related to the training phase
 ```bash
 os.mkdir('model')
 ```
+
+Train the model
+```bash
+!python train.py --gpu_ids 0 --name PCB --PCB --train_all --batchsize 16 --margin 0.3 --lr 0.01 --alpha 0.0 --data_dir ../PRAI-1581/pytorch
+```
 ### Testing
 
 ### Re-ranking
