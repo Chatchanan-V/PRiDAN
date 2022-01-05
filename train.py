@@ -1,3 +1,6 @@
+""" The original creator of the following code is Zhedong Zheng """
+""" https://github.com/layumi/Person_reID_baseline_pytorch """
+
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function, division
