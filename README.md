@@ -104,6 +104,8 @@ Here, we extract a feature vector from a query image and compare it against all 
 A ranking result can be obtained by computing distance between features vectors of a query image and gallery images and ranking the values according to the distance. 
 
 ### Re-ranking result
+Below is the qualitative results of three ranking methods.
+
 ![Compare_3_ranking_list_2](https://user-images.githubusercontent.com/94464876/149622359-cec64dd0-8ca9-4ede-bf54-268aedb89d3a.png)
 
 <!-- ### Visualization -->
