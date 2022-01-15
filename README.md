@@ -105,4 +105,5 @@ The resulting top-k ranking list can be obtained by sorting similarity measures.
 <!-- ### Visualization -->
 
 ## Reference
-
+- [Person_reID_baseline_pytorch](https://github.com/layumi/Person_reID_baseline_pytorch)
+- [Person-reID-triplet-loss](https://github.com/layumi/Person-reID-triplet-loss)
