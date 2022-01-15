@@ -95,7 +95,9 @@ You may need to change the batchsize if GPU memory is not enough
 I use n = 3 for the number of negative samples used in adaptive weight scheme and p = 8 for the number of parts used in PCB method, as it has been shown to achieve the optimal result.
 
 ### Testing
+Here, we extract a feature vector from a query and compare it against all feature vector of gallery images.
 
+The resulting top-k ranking list can be obtained by sorting similarity measure. 
 
 ### Re-ranking result
 ![Compare_3_ranking_list_2](https://user-images.githubusercontent.com/94464876/149622359-cec64dd0-8ca9-4ede-bf54-268aedb89d3a.png)
