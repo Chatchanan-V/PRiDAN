@@ -101,7 +101,7 @@ I use n = 3 for the number of negative samples used in adaptive weight scheme an
 ### Testing
 Here, we extract a feature vector from a query image and compare it against all feature vectors of gallery images.
 
-The resulting top-k ranking list can be obtained by sorting similarity measures. 
+A ranking result can be obtained by computing distance between features vectors of a query image and gallery images and ranking the values according to the distance. 
 
 ### Re-ranking result
 ![Compare_3_ranking_list_2](https://user-images.githubusercontent.com/94464876/149622359-cec64dd0-8ca9-4ede-bf54-268aedb89d3a.png)
