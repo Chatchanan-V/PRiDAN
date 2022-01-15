@@ -22,6 +22,10 @@ It contains 39461 images for 1580 IDs which are divided into:
 - Testing: 19938 images for 799 IDs 
   - Query: 4680 images
   - Gallery: 15258 images
+
+- Sample images from PRAI-1581
+
+![example_PRAI-1581](https://user-images.githubusercontent.com/94464876/149623340-10bda2ef-cbd4-4f2a-8ca4-229cac8f9903.png)
   
 You can download the PRAI-1581 dataset from [Google Drive](https://drive.google.com/file/d/168UcmbW1twnq7F8BB_FtvPzCKiCLAMIp/view?usp=sharing).
 I have converted the dataset into Market-1501 format, which contains the following directories:
