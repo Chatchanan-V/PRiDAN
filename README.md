@@ -109,3 +109,4 @@ The resulting top-k ranking list can be obtained by sorting similarity measures.
 - [Person-reID-triplet-loss](https://github.com/layumi/Person-reID-triplet-loss)
 - [PRAI-1581 repo](https://github.com/stormyoung/PRAI-1581)
 - [person-re-ranking](https://github.com/zhunzhong07/person-re-ranking)
+- [expanded-cross-neighborhood](https://github.com/pse-ecn/expanded-cross-neighborhood)
