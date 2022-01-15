@@ -96,7 +96,7 @@ I use n = 3 for the number of negative samples used in adaptive weight scheme an
 
 ### Testing
 
-### Re-ranking
+### Re-ranking result
 ![Compare_3_ranking_list_2](https://user-images.githubusercontent.com/94464876/149622359-cec64dd0-8ca9-4ede-bf54-268aedb89d3a.png)
 
 ### Visualization
