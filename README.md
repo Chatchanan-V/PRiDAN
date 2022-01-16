@@ -100,6 +100,7 @@ I use n = 3 for the number of negative samples used in adaptive weight scheme an
 
 Below is the diagram comparing binary weight and adaptive weight scheme during training.
 
+![embedding_space5](https://user-images.githubusercontent.com/94464876/149654406-22378292-4617-47a3-9136-5e88c2d8e704.png)
 
 ### Testing
 Here, we extract a feature vector from a query image and compare it against all feature vectors of gallery images.
