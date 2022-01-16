@@ -98,6 +98,9 @@ You may need to change the batchsize if GPU memory is not enough
 
 I use n = 3 for the number of negative samples used in adaptive weight scheme and p = 8 for the number of parts used in PCB method, as it has been shown to achieve the optimal result.
 
+Below is the diagram comparing binary weight and adaptive weight scheme during training.
+
+
 ### Testing
 Here, we extract a feature vector from a query image and compare it against all feature vectors of gallery images.
 
