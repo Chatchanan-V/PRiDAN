@@ -123,24 +123,24 @@ def extract_feature(model,dataloaders):
         if opt.PCB:
             ff = torch.FloatTensor(n,2048,6).zero_() # we have six parts
         
-        #เปลี่ยนจาก 2 เป็น 1 
+        #change 2 to 1 
         for i in range(2):
             if(i==1):
                 img = fliplr(img)
             input_img = Variable(img.cuda())
             #outputs,f = model(input_img) 
             
-            #เพิ่ม x_tl กับ f_tl
+            #add x_tl and f_tl
             f, x_tl, f_tl = model(input_img) #f=[32,2048,6], x_tl=[32,781], f_tl=[32,2048]
             
             f = f.data.cpu()
             ff = ff+f #[32,2048,6]
             
-            #เพิ่มเข้ามา
+            #add-on
             f_tl = f_tl.data.cpu()
             ff_tl = ff_tl + f_tl #[32,2048]
         
-        #ต้องเอาออกมาจาก loop ไม่งั้น shape จะไม่ตรงกัน
+        
         ff_tl = ff_tl.view(ff_tl.size(0), ff_tl.size(1), 1)  #[32,2048,1]
         ff = torch.cat((ff_tl, ff), 2) #[32,2048,7]
 
@@ -150,11 +150,11 @@ def extract_feature(model,dataloaders):
             # 1. To treat every part equally, I calculate the norm for every 2048-dim part feature.
             # 2. To keep the cosine score==1, sqrt(6) is added to norm the whole feature (2048*6).
             
-            #เปลี่ยนจาก np.sqrt(6) เป็น np.sqrt(7)
+            #change np.sqrt(6) to np.sqrt(7)
             fnorm = torch.norm(ff, p=2, dim=1, keepdim=True) * np.sqrt(7)  #[32,1,7]
-            #จาก [32,2048,6] เป็น [32,2048,7]
+            #from [32,2048,6] to [32,2048,7]
             ff = ff.div(fnorm.expand_as(ff)) #[32,2048,7]
-            #จาก [32,12288] เป็น [32,14336]
+            #from [32,12288] to [32,14336]
             ff = ff.view(ff.size(0), -1) #[32,14336]
         else:
             fnorm = torch.norm(ff, p=2, dim=1, keepdim=True)
