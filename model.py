@@ -66,15 +66,15 @@ class PCB(nn.Module):
         self.part = 8 # We cut the pool5 to 6 parts
         model_ft = models.resnet50(pretrained=True)
         
-        #เปลี่ยนจาก (1,1) เป็น (self.part,1)
+        #change (1,1) to (self.part,1)
         model_ft.avgpool = nn.AdaptiveAvgPool2d((self.part,1))
         self.model = model_ft
                
-        #เปลี่ยนจาก (self.part,1) เป็น (1,1)
+        #change (self.part,1) to (1,1)
         self.dropout = nn.Dropout(p=0.5)
         self.avgpool = nn.AdaptiveAvgPool2d((1,1))
         
-        #เพิ่มเข้ามา
+        #add-on
         self.classifier = ClassBlock(2048, class_num, dropout=False, relu=False, num_bottleneck=2048, linear=True)
         
         # remove the final downsample
@@ -136,12 +136,12 @@ class PCB_test(nn.Module):
         self.part = 6
         self.model = model.model
         
-        #เพิ่มเข้ามา
+        #add-on
         self.classifier = model.classifier
 
         self.avgpool1 = nn.AdaptiveAvgPool2d((self.part,1))
         
-        #เพิ่มเข้ามา
+        #add-on
         self.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
         
         # remove the final downsample
