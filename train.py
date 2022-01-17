@@ -219,21 +219,21 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
                 # forward
                 #model_eval = copy.deepcopy(model)
                 #model_eval = model_eval.eval()
-                outputs_pcb, outputs, f = model(inputs) # outputs_pcb = list ของ [16,781] identification vector 6 ตัว, f = triplet feature [16,2048] (class เดียวกัน ทุกๆ 4 ตัว)
-                #outputs ข้างบน สามารถเอามาใช้ใน global identification/classification loss ได้ [16,781] global
-                outputs_pos, _, pf = model(pos) # outputs_pos = list ของ [64,781] identification vector 6 ตัว, pf = triplet feature [64,2048] (class เดียวกัน ทุกๆ 4 ตัว)
+                outputs_pcb, outputs, f = model(inputs) # outputs_pcb = list [16,781] identification vector 6 entries, f = triplet feature [16,2048] 
+                #outputs above can be used in global identification/classification loss resulting in [16,781] global
+                outputs_pos, _, pf = model(pos) # outputs_pos = list [64,781] identification vector 6 entries, pf = triplet feature [64,2048] 
                 #pf = Variable( pf, requires_grad=True)
-                neg_labels = pos_labels # labels 4*16 = 64 ตัว
+                neg_labels = pos_labels # labels 4*16 = 64 
                 # hard-neg
                 # ----------------------------------
                 nf_data = pf # [64,2048]
                 # 128 is too much, we use pool size = 64
-                rand = np.random.permutation(4*opt.batchsize)[0:opt.poolsize] # shuffle เลข 0-63, index แค่ [0:opt.poolsize] ตัวแรก 
-                nf_data = nf_data[rand,:] # shuffle pf [64,2048] feature ตาม rand ข้างบน
-                neg_labels = neg_labels[rand] # corresponding shuffle labels [64] ตัว ตาม rand (ฉะนั้น row ของ [64,2048] nf_data features กับ [64] neg_labels labels จะตรงกัน )
+                rand = np.random.permutation(4*opt.batchsize)[0:opt.poolsize] # shuffle 0-63, index [0:opt.poolsize] 
+                nf_data = nf_data[rand,:] # shuffle pf [64,2048] feature according to rand above
+                neg_labels = neg_labels[rand] # corresponding shuffle labels [64] 
                 nf_t = nf_data.transpose(0,1) # [2048,64]
                 score = torch.mm(f.data, nf_t) # [16,64]
-                score, rank = score.sort(dim=1, descending = True) # score high == hard, index ใน rank คือ index ของ nf_data ที่ทำให้ค่าเรียงจากมากสุดไปน้อยสุด 
+                score, rank = score.sort(dim=1, descending = True)
                 labels_cpu = labels.cpu()
                 
                 nscore = torch.zeros(now_batch_size).cuda()
